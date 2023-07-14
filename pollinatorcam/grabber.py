@@ -17,7 +17,7 @@ import time
 
 import cv2
 import numpy
-import systemd.daemon
+import systemd
 
 import tfliteserve
 
@@ -82,7 +82,7 @@ default_cfg = {
 data_dir = '/mnt/data/'
 
 # Loading in new config file settings
-customSetting = '/home/pi/Desktop/configs'
+customSetting = '/home/xilinx/configs'
 if os.path.isfile(customSetting):
     in1 = open(customSetting,'r')
     settingsL = json.load(in1)

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export HOME=/home/xilinx
 source $HOME/.bashrc
 source $HOME/.virtualenvs/pollinatorcam/bin/activate
 

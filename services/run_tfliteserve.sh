@@ -13,8 +13,8 @@ cd $HOME/r/braingram/tfliteserve
 #python -m tfliteserve -m tflite_20220630_1/model.tflite -l tflite_20220630_1/labels.txt -j -1 -T detector
 
 # Read in model options
-CLASSES=`cat /home/pi/Desktop/configs | jq '.classes'`
-CORAL=`cat /home/pi/Desktop/configs | jq '.coral'`
+CLASSES=`cat /home/xilinx/configs | jq '.classes'`
+CORAL=`cat /home/xilinx/configs | jq '.coral'`
 
 if [[ $CLASSES == *"multi"* ]]; then
 	if [ $CORAL == 0 ]; then

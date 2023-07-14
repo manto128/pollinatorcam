@@ -3,9 +3,9 @@ Description=pollinatorcamera discover
 After=network.target
 
 [Service]
-User=pi
-Group=pi
-ExecStart=/home/pi/r/braingram/pollinatorcam/services/run_discover.sh
+User=root
+Group=xilinx
+ExecStart=/home/xilinx/r/braingram/pollinatorcam/services/run_discover.sh
 #TODO make this a timer
 RestartSec=300
 Restart=always

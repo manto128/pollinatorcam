@@ -1,5 +1,5 @@
 {
-	"hostname": "raspberrypi",
+	"hostname": "pynq",
 	"model_inference": 1,
 	"classes": "single",
 	"coral": 0,

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export HOME=/home/xilinx
 source $HOME/.bashrc
 source $HOME/.virtualenvs/pollinatorcam/bin/activate
 
@@ -8,7 +9,7 @@ cd $HOME/r/braingram/pollinatorcam
 # exec here to use same PID to allow systemd watchdog
 #exec python3 -m pollinatorcam -l $1 -rdD
 # TODO flag for usb vs IP camera
-MODELSTATUS=`cat /home/pi/Desktop/configs | jq '.model_inference'`
+MODELSTATUS=`cat /home/xilinx/configs | jq '.model_inference'`
 
 if [ $MODELSTATUS == 0 ]
 then

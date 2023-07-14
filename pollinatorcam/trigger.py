@@ -432,9 +432,8 @@ class CVTriggeredRecording(TriggeredRecording):
         # check if image should be saved based on timer
         if self.periodic_still:
             t = time.monotonic()
-            if (
-                    not hasattr(self, 'last_still_time') or
-                    t - self.last_still_time >= self.periodic_still):
+            if not hasattr(self, 'last_still_time') or \
+                t - self.last_still_time >= self.periodic_still:
                 self.save_image(im)
                 self.last_still_time = t
 

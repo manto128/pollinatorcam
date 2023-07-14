@@ -3,8 +3,8 @@ Description=pollinatorcamera overview generation service
 After=network.target
 
 [Service]
-User=pi
-ExecStart=python3 /home/pi/r/braingram/pollinatorcam/services/overview.py
+User=root
+ExecStart=python3 /home/xilinx/r/braingram/pollinatorcam/services/overview.py
 StandardOutput=file:/mnt/data/logs/overview.out
 StandardError=file:/mnt/data/logs/overview.err
 
